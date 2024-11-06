@@ -5,9 +5,26 @@ let totalTime: number = 0;
 let timerInterval: NodeJS.Timeout | null = null;
 
 function formatTime(timeInMilliseconds: number): string {
-    const minutes = Math.floor(timeInMilliseconds / 60000);
-    const seconds = Math.floor((timeInMilliseconds % 60000) / 1000);
-    return `${minutes}m ${seconds}s`;
+    const days = Math.floor(timeInMilliseconds / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeInMilliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeInMilliseconds % (1000 * 60)) / 1000);
+
+    let formattedTime = '';
+    
+    if (days > 0) {
+        formattedTime += `${days}d `;
+    }
+    if (hours > 0 || days > 0) {
+        formattedTime += `${hours}h `;
+    }
+    if (minutes > 0 || hours > 0 || days > 0) {
+        formattedTime += `${minutes}m `;
+    }
+
+    formattedTime += `${seconds}s`;
+
+    return formattedTime;
 }
 
 export function activate(context: vscode.ExtensionContext) {
