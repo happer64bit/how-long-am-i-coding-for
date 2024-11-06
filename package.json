@@ -12,6 +12,9 @@
   "activationEvents": [
     "*"
   ],
+  "repository": {
+    "directory": "https://github.com/happer64bit/how-long-am-i-coding-for"
+  },
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
@@ -48,5 +51,6 @@
   "author": {
     "name": "Wint Khant Lin",
     "email": "happer64bit@gmail.com"
-  }
+  },
+  "publisher": "happer64bit"
 }

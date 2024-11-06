@@ -2,7 +2,7 @@
 
 This VSCode extension tracks and displays the total amount of time you have spent coding in VSCode. The time is shown in the status bar and is persisted across sessions.
 
-![screenshot of extension](.github/screenshot.png)
+![screenshot of extension](https://github.com/happer64bit/how-long-am-i-coding-for/blob/main/.github/screenshot.png?raw=true)
 
 ## Usage
 
@@ -41,4 +41,4 @@ To develop or contribute to this extension, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
