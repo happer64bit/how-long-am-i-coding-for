@@ -7,6 +7,7 @@
     "vscode": "^1.95.0"
   },
   "categories": [
+    "Visualization",
     "Other"
   ],
   "activationEvents": [
@@ -52,5 +53,5 @@
     "name": "Wint Khant Lin",
     "email": "happer64bit@gmail.com"
   },
-  "publisher": "happer64bit"
+  "publisher": "WintKhantLin"
 }
